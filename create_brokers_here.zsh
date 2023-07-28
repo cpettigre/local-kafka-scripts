@@ -19,7 +19,7 @@ do
     if [ ! -d "broker$i" ]; then
         mkdir broker$i 
 	cd broker$i
-        init_here.zsh
+        init.zsh
 	replace_server_props.zsh $i
         replace_log4j_props.zsh $i
 	replace_zookeeper_props.zsh $i
