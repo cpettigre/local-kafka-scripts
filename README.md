@@ -4,8 +4,8 @@ Scripts for creation and configuration of Kafka brokers locally on Mac. Set $KAF
 <b>create-brokers-here.zsh -b [n]</b><br>
 Run this script to create distinct directories and configurations for n new brokers in your current directory.
 
-<b>init.zsh</b><br>
-In a new session, change to the directory of your broker and then run `source init.zsh` before running any Kafka bin commands. Sets env variables and creates necessary directories or config files if any are missing.
+<b>init-broker.zsh</b><br>
+In a new session, change to the directory of your broker and then run `source init-broker.zsh` before running any Kafka bin commands. Sets env variables and creates necessary directories or config files if any are missing.
 
 <b>get_default_configs.zsh [filename (optional)]</b><br>
 Copy the basic, default configuration files (server.properties, log4j.properties and zookeeper.properties) from Kafka's etc/kafka folder. Does not overwrite unless a filename is specified.

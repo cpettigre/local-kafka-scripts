@@ -6,4 +6,4 @@ broker_id=$1
 sed -i "" "s,/tmp/zookeeper,`pwd`/data,g" zookeeper.properties
 
 #Set client port
-sed -i "" "s,clientPort=2181,clientPort=218${broker_id},g" zookeeper.properties
+sed -i "" "s,clientPort=2180,clientPort=218${broker_id},g" zookeeper.properties

@@ -3,7 +3,7 @@
 export KAFKA_CONFIG=$KAFKA_HOME/etc/kafka
 export KAFKA_BIN=$KAFKA_HOME/bin
 export PATH=$PATH:$KAFKA_BIN
-export KAFKA_OPTS="-Dlog4j.configuration=file:$(pwd)/log4j.properties"
+export KAFKA_LOG4J_OPTS="-Dlog4j.configuration=file:$(pwd)/log4j.properties"
 
 if [ ! -f "server.properties" ]; then
     get_default_configs.zsh "server.properties"
